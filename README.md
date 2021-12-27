@@ -9,5 +9,5 @@ How to run examples.
   <li> Open locally the folder you have choosed.</li>
   <li> Open terminal from there. (It is possible from visual studio code too)</li>
   <li> Run npm install</li>
-  <li> Run npm start<li>
+  <li> Run npm start</li>
 </ol>
