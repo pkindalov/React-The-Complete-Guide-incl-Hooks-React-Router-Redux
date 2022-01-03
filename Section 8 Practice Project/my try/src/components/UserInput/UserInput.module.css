@@ -1,0 +1,87 @@
+.form-control {
+    margin: 0.5rem 0;
+  }
+  
+  .form-control label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-control input {
+    display: block;
+    width: 100%;
+    border: 1px solid #ccc;
+    font: inherit;
+    line-height: 1.5rem;
+    padding: 0 0.25rem;
+  }
+  
+  .form-control input:focus {
+    outline: none;
+    background: #fad0ec;
+    border-color: #8b005d;
+  }
+  
+  .form-control.invalid input {
+    border-color: red;
+    background: #ffd7d7;
+  }
+  
+  .form-control.invalid label {
+    color: red;
+  }
+
+  .form-group{
+      margin-top: 0.5rem;
+  }
+
+  #warningWindow {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 1rem;
+    position: absolute;
+    background: white;
+    left: 44rem;
+    width: 31rem;
+    height: 10rem;
+  }
+
+  .warningHeading{
+    background: #ac0e77;
+    padding: 1rem;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+
+  .warningMsg{
+    padding: 1rem;
+    margin-top: 0.5rem;
+    font-weight: bold;
+  }
+
+  .buttonOkCont{
+    float: right;
+    padding-right: 0.6rem;
+  }
+
+  .buttonOkCont button{
+    background: #ac0e77;
+    border: 1px solid black;
+    font-weight: bold;
+    padding: 0.3rem 0.8rem 0.3rem 0.8rem;
+    color: white;
+  }
+
+  .buttonOkCont button:hover{
+    cursor: pointer;
+  }
+
+  .visible{
+    visibility: block;
+  }
+
+  .hidden{
+    visibility: hidden;
+  }
