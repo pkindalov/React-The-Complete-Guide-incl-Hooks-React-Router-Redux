@@ -36,6 +36,7 @@ const UserInput = (props) => {
 		event.preventDefault();
 		if (isUsernameValid(username) && isAgeValid(age)) {
 			setIsValid((prevState) => true);
+			props.onAddUser({username: username, age: age});
 			return;
 		}
 		setIsValid((prevState) => false);
@@ -48,11 +49,11 @@ const UserInput = (props) => {
 			<div className={`${styles['form-control']}`}>
 				<div className={styles['form-group']}>
 					<label>Username</label>
-					<input type="text" onChange={userInputChangeHandler} />
+					<input type="text" name='username' onChange={userInputChangeHandler} />
 				</div>
 				<div className={styles['form-group']}>
 					<label>Age(Years)</label>
-					<input type="number" onChange={userYearsInputChangeHandler} />
+					<input type="number" name='age' onChange={userYearsInputChangeHandler} />
 				</div>
 			</div>
 			<Button type="submit">Add user</Button>

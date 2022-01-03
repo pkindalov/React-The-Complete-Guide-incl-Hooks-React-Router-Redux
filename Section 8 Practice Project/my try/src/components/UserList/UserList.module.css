@@ -1,0 +1,10 @@
+.user-goal{
+    border: 1px solid black;
+    padding: 0.5rem;
+    margin-bottom: 0.6rem;
+    font-weight: bold;
+}
+
+.user-goal::first-letter{
+    text-transform: capitalize;
+}
