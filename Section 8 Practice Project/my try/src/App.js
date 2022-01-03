@@ -6,7 +6,6 @@ function App() {
   const [isFormValid, setIsFormValid] = useState(true);
 
   const isUserInputValid = (isValid) => {
-    console.log('parent');
     if(!isValid) {
       setIsFormValid(false);
       return;

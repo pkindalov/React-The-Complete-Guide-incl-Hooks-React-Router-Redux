@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styles from './UserInput.module.css';
 import Button from '../UI/Button/Button';
+import WarningWindow from '../UI/Warning Window/WarningWindow';
 
 const UserInput = (props) => {
 	let [ username, setUsername ] = useState('');
@@ -20,7 +21,7 @@ const UserInput = (props) => {
 	const clickOkBtn = (event) => {
 		event.preventDefault();
 		setIsOkClicked(true);
-        props.isUserInputValid(true);
+		props.isUserInputValid(true);
 	};
 
 	const isUsernameValid = (username) => {
@@ -39,7 +40,7 @@ const UserInput = (props) => {
 		}
 		setIsValid((prevState) => false);
 		setIsOkClicked((prevState) => false);
-        props.isUserInputValid(false);
+		props.isUserInputValid(false);
 	};
 
 	return (
@@ -56,13 +57,8 @@ const UserInput = (props) => {
 			</div>
 			<Button type="submit">Add user</Button>
 
-			<div id={styles.warningWindow} className={`${!isValid && !isOkClicked ? styles.visible : styles.hidden}`}>
-				<div className={styles.warningHeading}>Invalid Input</div>
-				<div className={styles.warningMsg}>Please enter a valid name and age.(non-empty valyes).</div>
-				<div className={styles.buttonOkCont}>
-					<button onClick={clickOkBtn}>Okay</button>
-				</div>
-			</div>
+			{!isValid &&
+			 !isOkClicked && <WarningWindow isUserInputValid={props.isUserInputValid} clickOkBtn={clickOkBtn} />}
 		</form>
 	);
 };
