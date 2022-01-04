@@ -1,15 +1,15 @@
-import React, {useState} from 'react';
-import UserInput from  './components/UserInput/UserInput';
+import React, { useState } from 'react';
+import UserInput from './components/UserInput/UserInput';
 import UserList from './components/UserList/UserList';
 import './App.css';
 
 function App() {
   const [isFormValid, setIsFormValid] = useState(true);
   const [users, setUsers] = useState([]);
-  let content =  '';
+  let content = '';
 
   const isUserInputValid = (isValid) => {
-    if(!isValid) {
+    if (!isValid) {
       setIsFormValid(false);
       return;
     }
@@ -19,13 +19,35 @@ function App() {
   const addUser = (user) => {
     setUsers(prevUsers => {
       const updatedUsers = [...prevUsers];
-      updatedUsers.unshift({username: user.username, age: user.age, id: Math.random().toString()});
+      updatedUsers.unshift({ username: user.username, age: user.age, id: Math.random().toString() });
       return updatedUsers;
     });
   }
 
-  if(users.length > 0) {
-    content = (<UserList items={users} />);
+  const editUser = (user) => {
+    setUsers(prevUsers => {
+      let userForEditIndex = null;
+
+      prevUsers.filter((u, i) => {
+        if (u.id === user.id) userForEditIndex = i;
+        return i;
+      });
+
+      let updatedUsers = [...prevUsers];
+      if (userForEditIndex !== null) {
+        let users = prevUsers.slice(0); //get copy of the users array
+        let editedUser = users[userForEditIndex];
+        editedUser.username = user.username;
+        editedUser.age = user.age;
+        updatedUsers = [...users];
+      }
+
+      return updatedUsers;
+    });
+  }
+
+  if (users.length > 0) {
+    content = (<UserList items={users} isUserInputValid={isUserInputValid} editUser={editUser} />);
   }
 
 

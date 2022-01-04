@@ -36,7 +36,8 @@ const UserInput = (props) => {
 		event.preventDefault();
 		if (isUsernameValid(username) && isAgeValid(age)) {
 			setIsValid((prevState) => true);
-			props.onAddUser({username: username, age: age});
+			if(props.onAddUser) props.onAddUser({username: username, age: age});
+			if(props.onEditUser) props.onEditUser({username: username, age: age, id: props.id})
 			return;
 		}
 		setIsValid((prevState) => false);
@@ -49,14 +50,14 @@ const UserInput = (props) => {
 			<div className={`${styles['form-control']}`}>
 				<div className={styles['form-group']}>
 					<label>Username</label>
-					<input type="text" name='username' onChange={userInputChangeHandler} />
+					<input type="text" placeholder={props.username && props.username} name='username' onChange={userInputChangeHandler} />
 				</div>
 				<div className={styles['form-group']}>
 					<label>Age(Years)</label>
-					<input type="number" name='age' onChange={userYearsInputChangeHandler} />
+					<input type="number" placeholder={props.age && props.age} name='age' onChange={userYearsInputChangeHandler} />
 				</div>
 			</div>
-			<Button type="submit">Add user</Button>
+			<Button type="submit">{props.btnText? props.btnText : 'Add User'}</Button>
 
 			{!isValid &&
 			 !isOkClicked && <WarningWindow isUserInputValid={props.isUserInputValid} clickOkBtn={clickOkBtn} />}
