@@ -33,7 +33,8 @@ const UserList = (props) => {
 				<div className={styles['user-goal']} key={user.id} id={user.id}>
 					{user.username + ' (' + user.age + ' years old)'}
 					<div>
-						<Button key={user.id} id={user.id} onClick={showHideEditForm}>Edit</Button>
+						<Button key={user.id} id={user.id} onClick={showHideEditForm}>Edit</Button>&nbsp;
+						<Button key={user.id+'-delete'} id={user.id} onClick={props.deleteUser}>Delete</Button>
 					</div>
 					<div className={user.editing ? styles.visible : styles.hidden}>
 						<UserInput

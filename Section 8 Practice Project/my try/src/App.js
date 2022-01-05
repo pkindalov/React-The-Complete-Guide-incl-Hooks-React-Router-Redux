@@ -47,8 +47,15 @@ function App() {
     });
   }
 
+  const deleteUser = (event) => {
+    const userId = event.target.id;
+    setUsers(prevUsers => {
+      return prevUsers.filter(user => user.id !== userId);
+    });
+  }
+
   if (users.length > 0) {
-    content = (<UserList items={users} isUserInputValid={isUserInputValid} editUser={editUser} />);
+    content = (<UserList items={users} isUserInputValid={isUserInputValid} editUser={editUser} deleteUser={deleteUser} />);
   }
 
 
