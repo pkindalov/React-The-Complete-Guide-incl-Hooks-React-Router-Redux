@@ -8,3 +8,11 @@
 .user-goal::first-letter{
     text-transform: capitalize;
 }
+
+.visible{
+    display: block;
+}
+
+.hidden{
+    display: none;
+}

@@ -18,7 +18,8 @@ function App() {
 
   const addUser = (user) => {
     setUsers(prevUsers => {
-      const updatedUsers = [...prevUsers];
+      // let parentUsers = [...props.items].map(user => Object.assign(user, {...user, editing: false}));
+      const updatedUsers = [...prevUsers].map(user => Object.assign(user, {...user, editing: false}));
       updatedUsers.unshift({ username: user.username, age: user.age, id: Math.random().toString() });
       return updatedUsers;
     });
