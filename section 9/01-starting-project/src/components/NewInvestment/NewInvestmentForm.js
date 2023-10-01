@@ -1,12 +1,12 @@
 import { useState } from "react";
 import styles from "./NewInvestmentForm.module.css";
 
-const NewInvestmentForm = () => {
+const NewInvestmentForm = ({ onSubmit }) => {
   const [userInput, setUserInput] = useState({
     currentSavings: 0,
     yearlyContribution: 0,
     expectedReturn: 0,
-    duration: 0
+    duration: 0,
   });
 
   const inputChangeHandler = (e) => {
@@ -17,20 +17,24 @@ const NewInvestmentForm = () => {
     });
   };
 
-
   const resetFormHandler = () => {
     setUserInput({
       currentSavings: 0,
       yearlyContribution: 0,
       expectedReturn: 0,
-      duration: 0
+      duration: 0,
     });
-  }
+  };
 
-  console.log(userInput);
+  const submitFormHandler = (e) => {
+    e.preventDefault();
+    onSubmit(userInput);
+  };
+
+  // console.log(userInput);
 
   return (
-    <form className={styles.form}>
+    <form onSubmit={submitFormHandler} className={styles.form}>
       <div className={styles["input-group"]}>
         <p>
           <label htmlFor="current-savings">Current Savings ($)</label>
@@ -78,7 +82,11 @@ const NewInvestmentForm = () => {
         </p>
       </div>
       <p className={styles.actions}>
-        <button type="reset" onClick={resetFormHandler} className={styles.buttonAlt}>
+        <button
+          type="reset"
+          onClick={resetFormHandler}
+          className={styles.buttonAlt}
+        >
           Reset
         </button>
         <button type="submit" className={styles.button}>
