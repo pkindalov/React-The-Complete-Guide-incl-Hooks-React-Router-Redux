@@ -1,13 +1,17 @@
 import Header from "./components/common/Header";
 import NewInvestmentForm from "./components/NewInvestment/NewInvestmentForm";
+import InvestmentsList from "./components/Investments/InvestmentsList";
+import { useState } from "react";
 
 function App() {
-  const yearlyData = []; // per-year results
+  const [data, setData] = useState([]);
+  const noDataMessage = <p className="no-data-msg">No investment calculated yet</p>;
   const calculateHandler = (userInput) => {
     
     // Should be triggered when form is submitted
     // You might not directly want to bind it to the submit event on the form though...
-
+    
+    const yearlyData = []; // per-year results
 
     let currentSavings = +userInput["currentSavings"]; // feel free to change the shape of this input object!
     const yearlyContribution = +userInput["yearlyContribution"]; // as mentioned: feel free to change the shape...
@@ -30,8 +34,8 @@ function App() {
     }
 
     // do something with yearlyData ...
-
     console.log(yearlyData);
+    setData(yearlyData);
   };
 
   return (
@@ -41,27 +45,11 @@ function App() {
 
       {/* Todo: Show below table conditionally (only once result data is available) */}
       {/* Show fallback text if no data is available */}
-
-      <table className="result">
-        <thead>
-          <tr>
-            <th>Year</th>
-            <th>Total Savings</th>
-            <th>Interest (Year)</th>
-            <th>Total Interest</th>
-            <th>Invested Capital</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>YEAR NUMBER</td>
-            <td>TOTAL SAVINGS END OF YEAR</td>
-            <td>INTEREST GAINED IN YEAR</td>
-            <td>TOTAL INTEREST GAINED</td>
-            <td>TOTAL INVESTED CAPITAL</td>
-          </tr>
-        </tbody>
-      </table>
+      {data.length > 0 ? (
+        <InvestmentsList data={data} />
+      ) : (
+        noDataMessage
+      )}
     </div>
   );
 }
