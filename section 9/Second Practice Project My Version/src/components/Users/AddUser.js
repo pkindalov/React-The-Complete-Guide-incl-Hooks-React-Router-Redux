@@ -1,12 +1,27 @@
 import classes from "./AddUser.module.css";
 import Button from "../UI/Button";
+import { useState } from "react";
 
-const AddUser = () => {
+const AddUser = ({ onAddUser }) => {
+  const [userData, setUserData] = useState({
+    username: "",
+    age: "",
+  });
+
+  const inputChangeHandler = (e) => {
+    const field = e.target.name;
+    const value = e.target.value;
+
+    setUserData((prevState) => {
+      return { ...prevState, [field]: value };
+    });
+  };
 
   const submitFormHandle = (e) => {
     e.preventDefault();
-    alert('Form Submitted');
-  }
+    const user = { username: userData.username, age: userData.age };
+    onAddUser(user);
+  };
 
   return (
     <form onSubmit={submitFormHandle}>
@@ -19,10 +34,12 @@ const AddUser = () => {
           type="text"
           name="username"
           id="username"
+          onChange={inputChangeHandler}
+          value={userData.username}
         />
       </div>
       <div>
-      <label className={classes.input} htmlFor="age">
+        <label className={classes.input} htmlFor="age">
           Age(Years)
         </label>
         <input
@@ -30,6 +47,8 @@ const AddUser = () => {
           type="number"
           name="age"
           id="age"
+          onChange={inputChangeHandler}
+          value={userData.age}
         />
       </div>
       <div>
