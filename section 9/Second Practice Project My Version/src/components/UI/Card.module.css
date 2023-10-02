@@ -6,3 +6,7 @@
     border-radius: 8px;
     text-align: center;
 }
+
+.card-user__width{
+    width: 78%;
+}
