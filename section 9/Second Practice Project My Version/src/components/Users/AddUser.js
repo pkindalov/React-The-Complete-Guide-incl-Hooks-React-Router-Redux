@@ -50,7 +50,9 @@ const AddUser = ({ onAddUser }) => {
 
   return (
     <div>
-      {isErrorActive && <ErrorModal msg={errorMsg} />}
+      {isErrorActive && (
+        <ErrorModal msg={errorMsg} removeModal={setIsErrorActive} />
+      )}
       <form onSubmit={submitFormHandle}>
         <div>
           <label className={classes.input} htmlFor="username">

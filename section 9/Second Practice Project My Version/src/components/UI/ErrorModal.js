@@ -3,7 +3,7 @@ import Button from "./Button";
 import Card from "./Card";
 import cardClasses from "./Card.module.css";
 
-const ErrorModal = ({ msg }) => {
+const ErrorModal = ({ msg, removeModal }) => {
   return (
     <div className={classes.backdrop}>
       <div className={classes.modal}>
@@ -15,7 +15,11 @@ const ErrorModal = ({ msg }) => {
             <p>{msg}</p>
           </div>
           <div className={classes.actions}>
-            <Button type={"button"} label={"Okay"} />
+            <Button
+              type={"button"}
+              label={"Okay"}
+              onBtnClickHandler={removeModal}
+            />
           </div>
         </Card>
       </div>
