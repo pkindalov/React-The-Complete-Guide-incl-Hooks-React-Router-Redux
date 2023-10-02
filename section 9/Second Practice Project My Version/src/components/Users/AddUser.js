@@ -1,10 +1,17 @@
 import classes from "./AddUser.module.css";
+import Button from "../UI/Button";
 
 const AddUser = () => {
+
+  const submitFormHandle = (e) => {
+    e.preventDefault();
+    alert('Form Submitted');
+  }
+
   return (
-    <form>
+    <form onSubmit={submitFormHandle}>
       <div>
-        <label className={classes.input} for="username">
+        <label className={classes.input} htmlFor="username">
           Username
         </label>
         <input
@@ -15,7 +22,7 @@ const AddUser = () => {
         />
       </div>
       <div>
-      <label className={classes.input} for="age">
+      <label className={classes.input} htmlFor="age">
           Age(Years)
         </label>
         <input
@@ -24,6 +31,9 @@ const AddUser = () => {
           name="age"
           id="age"
         />
+      </div>
+      <div>
+        <Button type={"submit"} label={"Add User"} />
       </div>
     </form>
   );
