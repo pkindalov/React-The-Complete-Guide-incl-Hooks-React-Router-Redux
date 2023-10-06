@@ -10,6 +10,8 @@ const Cart = (props) => {
     </ul>
   );
   return (
+    // My Version
+    // <Modal onCancelCartModal={props.onCancelCartModal}>
     <Modal>
       {cartiItems}
       <div className={classes.total}>
@@ -17,6 +19,8 @@ const Cart = (props) => {
         <span>35.62</span>
       </div>
       <div className={classes.actions}>
+        {/* My Version */}
+        {/* <button onClick={props.onCancelCartModal} className={classes["button--alt"]}>Close</button> */}
         <button className={classes["button--alt"]}>Close</button>
         <button className={classes.button}>Order</button>
       </div>

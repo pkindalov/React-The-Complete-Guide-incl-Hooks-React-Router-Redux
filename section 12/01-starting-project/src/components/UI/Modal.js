@@ -3,6 +3,8 @@ import { Fragment } from "react";
 import ReactDOM from "react-dom";
 
 const Backdrop = (props) => {
+  // My Version
+  // return <div onClick={props.onCancelCartModal} className={classes.backdrop}></div>;
   return <div className={classes.backdrop}></div>;
 };
 
@@ -19,7 +21,10 @@ const portalElement = document.getElementById("overlays");
 const Modal = (props) => {
   return (
     <Fragment>
-      {ReactDOM.createPortal(<Backdrop />, portalElement)}
+      {ReactDOM.createPortal(
+        <Backdrop onCancelCartModal={props.onCancelCartModal} />,
+        portalElement
+      )}
       {ReactDOM.createPortal(
         <ModalOverlay>{props.children}</ModalOverlay>,
         portalElement
