@@ -1,11 +1,18 @@
 import { useState, useEffect } from "react";
 
-const useCounter = () => {
+const useCounter = (direction = "forward") => {
   const [counter, setCounter] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCounter((prevCounter) => prevCounter + 1);
+      switch (direction) {
+        case "backward":
+          setCounter((prevCounter) => prevCounter - 1);
+          break;
+        default:
+          setCounter((prevCounter) => prevCounter + 1);
+          break;
+      }
     }, 1000);
 
     return () => clearInterval(interval);
