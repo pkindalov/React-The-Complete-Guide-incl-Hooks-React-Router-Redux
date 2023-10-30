@@ -9,6 +9,9 @@ export default function Login() {
     const enteredEmail = email.current.value;
     const enteredPassword = password.current.value;
     console.log(enteredEmail, enteredPassword);
+
+    //NOT A RECOMMEND WAY. REACT MUST UPDATE THE DOM. AVOID THIS WHEN YOU CAN
+    // email.current.value = "";
   }
 
   return (
