@@ -1,6 +1,8 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 export default function Login() {
+  const [emailIsInvalid, setEmailIsInvalid] = useState();
+
   const email = useRef();
   const password = useRef();
 
@@ -8,7 +10,17 @@ export default function Login() {
     event.preventDefault();
     const enteredEmail = email.current.value;
     const enteredPassword = password.current.value;
-    console.log(enteredEmail, enteredPassword);
+    // console.log(enteredEmail, enteredPassword);
+
+    const emailIsValid = enteredEmail.includes("@");
+    if (!emailIsValid) {
+      setEmailIsInvalid(true);
+      return;
+    }
+
+    setEmailIsInvalid(false);
+
+    console.log("Sending a HTTP request... ");
 
     //NOT A RECOMMEND WAY. REACT MUST UPDATE THE DOM. AVOID THIS WHEN YOU CAN
     // email.current.value = "";
@@ -22,6 +34,9 @@ export default function Login() {
         <div className="control no-margin">
           <label htmlFor="email">Email</label>
           <input ref={email} id="email" type="email" name="email" />
+          <div className="control-error">
+            {emailIsInvalid && <p>Please enter a valid email address</p>}
+          </div>
         </div>
 
         <div className="control no-margin">

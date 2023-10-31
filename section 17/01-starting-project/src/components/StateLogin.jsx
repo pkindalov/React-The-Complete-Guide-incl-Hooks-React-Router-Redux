@@ -20,6 +20,8 @@ export default function Login() {
       email: "",
       password: "",
     });
+
+    //always add validations here
   }
 
   function handleInputChange(identifier, value) {
