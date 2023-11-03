@@ -16,6 +16,7 @@ export default function Signup() {
     console.log(data);
     // event.target.reset();
   }
+
   return (
     <form onSubmit={handleSubmit}>
       <h2>Welcome on board!</h2>
