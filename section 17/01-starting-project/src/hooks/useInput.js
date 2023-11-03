@@ -11,7 +11,7 @@ export function useInput(defaultValue, validationFn) {
     setDidEdit(false);
   }
 
-  function handleInputBlur(identifier) {
+  function handleInputBlur() {
     setDidEdit(true);
   }
 
