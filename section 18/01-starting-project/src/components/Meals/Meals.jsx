@@ -1,5 +1,6 @@
 import MealItem from "./MealItem.jsx";
 import { useHttp } from "../../hooks/useHttp.js";
+import Error from "../Errors/Error.jsx";
 
 const requestConfig = {};
 const Meals = () => {
@@ -12,8 +13,10 @@ const Meals = () => {
   console.log(loadedMeals);
 
   if (isLoading) {
-    return <p>Fetching meals...</p>;
+    return <p className="center">Fetching meals...</p>;
   }
+
+  if (error) return <Error title="Failed to fetch meals" message={error} />;
 
   return (
     <ul id="meals">
