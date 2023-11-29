@@ -1,6 +1,25 @@
 node_modules
+/node_modules
 /01-starting-setup/node_modules
 /Styling React Components/node_modules
 /Debugging React Apps/node_modules
 /Section 8 Practice Project/node_modules
 /Section 8 Practice Project/my try/node_modules
+/section 9/First Practice Project Lecturer Version/node_modules
+/section 9/First Practice Project My Version/node_modules
+/section 9/Second Practice Project Lecturer Version/node_modules
+/section 9/Second Practice Project My Version/node_modules
+/section 10/01-starting-project/node_modules
+/section 11/01-starting-project/node_modules
+/section 12/01-starting-project/node_modules
+/section 13/01-starting-setup/node_modules
+/section 13/07-optimizing-with-usememo//node_modules
+/section 14/01-starting-project/node_modules
+/section 15/01-starting-project/node_modules
+/section 15/06-preparing-the-project-for-the-next-steps/node_modules
+/section 16/01-starting-project/node_modules
+/section 16/04-onwards-to-a-more-realistic-example/node_modules
+/section 17/01-starting-project/node_modules
+/section 18/01-starting-project/node_modules
+/section 19/redux example/node_modules
+/section 19/01-starting-project/node_modules
