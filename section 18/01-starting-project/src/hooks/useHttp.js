@@ -21,14 +21,14 @@ export function useHttp(url, config, initialData = []) {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState();
   /*
-             This function down here in my hook will now be
-             about updating some state based on the request status.
-                                       */
+                 This function down here in my hook will now be
+                 about updating some state based on the request status.
+                                           */
   const sendRequest = useCallback(
-    async function sendRequest() {
+    async function sendRequest(data) {
       try {
         setIsLoading(true);
-        const resData = await sendHttpRequest(url, config);
+        const resData = await sendHttpRequest(url, { ...config, body: data });
         setData(resData);
       } catch (error) {
         setError(error.message || "Something  went wrong!");
