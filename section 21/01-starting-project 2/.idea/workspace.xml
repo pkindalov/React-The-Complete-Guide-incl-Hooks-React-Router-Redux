@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1d0bf4cf-9453-4322-afc1-00700e051172" name="Changes" comment="Working with Index Routes" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2ZFbmfA16oSjGOJqPTusYG8k4tg" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/panayotkindalov/Desktop/GitHub/React-The-Complete-Guide-incl-Hooks-React-Router-Redux/section 21/01-starting-project 2&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.start.executor&quot;: &quot;Run&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/usr/local/lib/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1d0bf4cf-9453-4322-afc1-00700e051172" name="Changes" comment="" />
+      <created>1702020936214</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1702020936214</updated>
+      <workItem from="1702020937491" duration="827000" />
+      <workItem from="1702021769802" duration="3406000" />
+      <workItem from="1702278102977" duration="4718000" />
+      <workItem from="1702364271119" duration="4154000" />
+      <workItem from="1702451315823" duration="2711000" />
+    </task>
+    <task id="LOCAL-00001" summary="Initializing a project structure for section 21">
+      <option name="closed" value="true" />
+      <created>1702021566272</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1702021566272</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Initializing a project structure for section 21">
+      <option name="closed" value="true" />
+      <created>1702021633138</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1702021633138</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Defining Routes">
+      <option name="closed" value="true" />
+      <created>1702025358773</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1702025358773</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Adding a Second Route">
+      <option name="closed" value="true" />
+      <created>1702025608468</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1702025608468</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Exploring an Alternative Way of Defining Routes">
+      <option name="closed" value="true" />
+      <created>1702278620597</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1702278620597</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Navigating between Pages with Links">
+      <option name="closed" value="true" />
+      <created>1702279932017</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1702279932017</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Layouts &amp; Nested Routes">
+      <option name="closed" value="true" />
+      <created>1702281683814</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1702281683814</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Showing Error Pages with errorElement">
+      <option name="closed" value="true" />
+      <created>1702364349270</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1702364349270</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Working with Navigation Links (NavLink)">
+      <option name="closed" value="true" />
+      <created>1702365161711</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1702365161711</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Navigating Programmatically">
+      <option name="closed" value="true" />
+      <created>1702365826280</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1702365826280</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Defining &amp; Using Dynamic Routes">
+      <option name="closed" value="true" />
+      <created>1702366918269</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1702366918269</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Adding Links for Dynamic Routes">
+      <option name="closed" value="true" />
+      <created>1702451418047</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1702451418047</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Understanding Relative &amp; Absolute Paths">
+      <option name="closed" value="true" />
+      <created>1702453067448</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1702453067448</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Working with Index Routes">
+      <option name="closed" value="true" />
+      <created>1702453755479</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1702453755479</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <MESSAGE value="Initializing a project structure for section 21" />
+    <MESSAGE value="Defining Routes" />
+    <MESSAGE value="Adding a Second Route" />
+    <MESSAGE value="Exploring an Alternative Way of Defining Routes" />
+    <MESSAGE value="Navigating between Pages with Links" />
+    <MESSAGE value="Layouts &amp; Nested Routes" />
+    <MESSAGE value="Showing Error Pages with errorElement" />
+    <MESSAGE value="Working with Navigation Links (NavLink)" />
+    <MESSAGE value="Navigating Programmatically" />
+    <MESSAGE value="Defining &amp; Using Dynamic Routes" />
+    <MESSAGE value="Adding Links for Dynamic Routes" />
+    <MESSAGE value="Understanding Relative &amp; Absolute Paths" />
+    <MESSAGE value="Working with Index Routes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working with Index Routes" />
+  </component>
+</project>
