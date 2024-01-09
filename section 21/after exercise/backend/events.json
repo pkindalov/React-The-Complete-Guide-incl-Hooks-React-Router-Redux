@@ -1,11 +1,1 @@
-{
-  "events": [
-    {
-      "id": "e1",
-      "title": "A dummy event",
-      "date": "2023-02-22",
-      "image": "https://blog.hubspot.de/hubfs/Germany/Blog_images/Optimize_Marketing%20Events%20DACH%202021.jpg",
-      "description": "Join this amazing event and connect with fellow developers."
-    }
-  ]
-}
+{"events":[{"title":"Parma1998","image":"https://footballlife.bg/wp-content/uploads/2021/11/%D0%9F%D0%B0%D1%80%D0%BC%D0%B0-850x560.jpg","date":"2024-02-02","description":"Test2","id":"735d6e58-ce3d-44d2-826b-e59a03240606"},{"title":"Parma","image":"https://footballlife.bg/wp-content/uploads/2021/11/%D0%9F%D0%B0%D1%80%D0%BC%D0%B0-850x560.jpg","date":"2023-12-13","description":"asdadasd","id":"81246f59-c3ae-4935-b9f4-df11f9cd38c3"},{"id":"e1","title":"A dummy event","date":"2023-02-22","image":"https://blog.hubspot.de/hubfs/Germany/Blog_images/Optimize_Marketing%20Events%20DACH%202021.jpg","description":"Join this amazing event and connect with fellow developers."}]}
