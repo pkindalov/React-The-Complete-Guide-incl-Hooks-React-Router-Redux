@@ -8,7 +8,7 @@ function AuthenticationPage() {
 export default AuthenticationPage;
 
 export async function action({ request }) {
-  const searchParams = new URL(request.url.searchParams);
+  const searchParams = new URL(request.url).searchParams;
   const mode = searchParams.get("mode") || "login";
 
   if (mode !== "login" && mode !== "signup") {
